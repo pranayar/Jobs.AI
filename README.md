@@ -12,8 +12,9 @@ The goal is simple:
 
 ## 🎥 Demo
 
-![Jobs.AI Demo](demo.gif)
-
+<p align="center">
+  <img src="demo.gif" width="800">
+</p>
 ---
 
 ## ✨ Features
