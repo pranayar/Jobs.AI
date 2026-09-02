@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment / secrets
+.env
+
+# Flask
+instance/
+
+# AI / uploaded files
+resume/*
+!resume/.gitkeep
+models/*.gguf

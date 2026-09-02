@@ -1,0 +1,112 @@
+{
+    "score": 85,
+    "score_summary": "The resume is well-structured and contains relevant information, but could benefit from more quantifiable achievements and specific project details.",
+    "personal_info": {
+        "name": "Pranay Arora",
+        "email": "arorapranay@gmail.com",
+        "phone": "+1 (807) 355-9555",
+        "location": "Toronto, ON, Canada (Willing to relocate)"
+    },
+    "experience": [
+        {
+            "job_title": "Sales Associate | Touch Unwired",
+            "company": "Thunder Bay, ON",
+            "duration": "09/2025 – 08/2026",
+            "description": "Promoted and sold mobile, internet, and TV services, phones, accessories, and related products based on customer needs. Provided customer service by assisting with device setup, SIM activation, troubleshooting, and explaining plans. Handled cash, debit/credit, POS transactions, credit checks, and ID verification accurately while maintaining store standards."
+        },
+        {
+            "job_title": "Cashier | Real Canadian Superstore",
+            "company": "Thunder Bay, ON",
+            "duration": "12/2025 – 08/2026",
+            "description": "Operated POS systems in a high-volume grocery environment, accurately processing cash, debit/credit transactions. Provided fast, friendly customer service while maintaining efficient checkout experience. Assisted customers with self-checkout, resolved issues, and maintained a clean, organized, and safe front-end area."
+        },
+        {
+            "job_title": "Software Developer (Project based) | Gaia Pottery Pvt. Ltd.",
+            "company": "Mumbai, India",
+            "duration": "02/2025 – 08/2025",
+            "description": "Managed inventory and maintained accurate stock levels to support customer orders. Handled payments and helped reduce transaction errors. Supported day-to-day operations and customer service."
+        },
+        {
+            "job_title": "Software Developer | Oracle",
+            "company": "Mumbai, India",
+            "duration": "11/2024 – 02/2025",
+            "description": "Worked in a team to optimize bank transaction processing, speeding up service delivery and ensuring accuracy. Collaborated on database management to support timely and reliable solutions. Provided client training sessions to improve system adoption and user satisfaction."
+        },
+        {
+            "job_title": "Software Developer (Project based) | Oceanic Spirits Pvt. Ltd.",
+            "company": "Mumbai, India",
+            "duration": "06/2024 – 10/2024",
+            "description": "Automated stock management and order systems to streamline supply chain processes and reduce delays. Developed reporting tools for business partnerships, focusing on efficiency and detail-oriented work. Assisted in resolving customer inquiries to maintain high service standards."
+        },
+        {
+            "job_title": "Software Developer | ICICI Lombard General Insurance Company",
+            "company": "Mumbai, India",
+            "duration": "05/2023 – 05/2024",
+            "description": "Developed online payment systems for sales, assisting with agent interactions and transaction handling for insurance policies via multiple payment modes. Developed and migrated cost-effective solutions. Trained team members on new system features to enhance operational efficiency."
+        }
+    ],
+    "education": [
+        {
+            "degree": "MSc in Computer Science",
+            "institution": "Lakehead University",
+            "year": "09/2025 – 08/2026"
+        },
+        {
+            "degree": "Bachelor of Engineering (B.E.) in Computer Engineering",
+            "institution": "Mumbai University",
+            "year": "08/2019 – 07/2023"
+        }
+    ],
+    "skills": [
+        "Customer Service & Assistance",
+        "Salesfloor Support & Merchandising",
+        "Stocking, Downstocking & Inventory Rotation",
+        "Cash Handling & Point-of-Sale (POS) Transactions",
+        "Returns, Exchanges & Product Protection",
+        "Self-Checkout and Front-End Support",
+        "Problem Solving & Conflict Resolution",
+        "Teamwork & Communication",
+        "Store Safety, Cleanliness & Organization",
+        "Knowledge of Store Policies & Procedures",
+        "Time Management in Fast-Paced Environments"
+    ],
+    "projects": [],
+    "certifications": [],
+    "resume_length": {
+        "pages": 1,
+        "assessment": "The resume is concise and to the point, making it easy to read and understand."
+    },
+    "strengths": [
+        "Relevant experience in customer service, retail sales, cash handling, inventory, and fast-paced store operations",
+        "Excellent communication and problem-solving skills",
+        "Available for full-time, part-time, and weekend roles",
+        "Knowledge of store policies and procedures"
+    ],
+    "weaknesses": [
+        "Lack of quantifiable achievements and specific project details"
+    ],
+    "missing_keywords": [
+        "customer service",
+        "sales",
+        "inventory",
+        "cash handling",
+        "returns",
+        "exchanges",
+        "product protection",
+        "self-checkout",
+        "front-end support",
+        "problem solving",
+        "teamwork",
+        "communication",
+        "store safety",
+        "cleanliness",
+        "organization",
+        "time management",
+        "fast-paced environments"
+    ],
+    "recommendations": [
+        "The resume is well-structured and contains relevant information, but could benefit from more quantifiable achievements and specific project details.",
+        "The candidate has experience in customer service, retail sales, cash handling, inventory, and fast-paced store operations, with excellent communication and problem-solving skills.",
+        "The candidate is available for full-time, part-time, and weekend roles, and has knowledge of store policies and procedures."
+    ]
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs.AI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            min-height: 100vh;
+            color: #111;
+            background: #f7f8fc;
+            overflow-x: hidden;
+        }
+
+        /* Ambient background */
+        .blob {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.45;
+            z-index: -1;
+        }
+
+        .blob.one {
+            background: #d9d6ff;
+            top: -250px;
+            left: -150px;
+        }
+
+        .blob.two {
+            background: #c8f4ff;
+            right: -200px;
+            bottom: -250px;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 30px 6vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+        }
+
+        .logo span {
+            color: #665cff;
+        }
+
+        .nav-pill {
+            padding: 9px 16px;
+            border-radius: 50px;
+            background: white;
+            border: 1px solid #e7e7ee;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Hero */
+        main {
+            min-height: calc(100vh - 90px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8vh 25px 60px;
+        }
+
+        .tag {
+            padding: 8px 15px;
+            border-radius: 50px;
+            background: #ffffff;
+            border: 1px solid #e5e5ed;
+            font-size: 12px;
+            font-weight: 600;
+            color: #665cff;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 30px rgba(40, 40, 80, 0.05);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: clamp(58px, 9vw, 115px);
+            line-height: 0.9;
+            letter-spacing: -7px;
+            font-weight: 850;
+            max-width: 1000px;
+        }
+
+        h1 span {
+            background: linear-gradient(
+                90deg,
+                #6258ff,
+                #8a7dff,
+                #39c9e8
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub {
+            margin-top: 28px;
+            font-size: 16px;
+            color: #777;
+            text-align: center;
+        }
+
+        /* Options */
+        .options {
+            width: min(900px, 100%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 65px;
+        }
+
+        .option {
+            position: relative;
+            min-height: 270px;
+            padding: 32px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #e5e5ec;
+            box-shadow: 0 20px 60px rgba(40, 40, 80, 0.07);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.35s ease;
+        }
+
+        .option:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 70px rgba(40, 40, 80, 0.13);
+        }
+
+        .option::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            right: -70px;
+            top: -70px;
+            transition: 0.4s ease;
+        }
+
+        .option.one::after {
+            background: #e3e0ff;
+        }
+
+        .option.two::after {
+            background: #d5f7ff;
+        }
+
+        .option:hover::after {
+            transform: scale(1.35);
+        }
+
+        .icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: #f4f3ff;
+            color: #665cff;
+            font-size: 23px;
+            margin-bottom: 55px;
+        }
+
+        .two .icon {
+            background: #effcff;
+            color: #18a9cc;
+        }
+
+        .option-number {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #aaa;
+        }
+
+        .option h2 {
+            font-size: 27px;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+
+        .option p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .go {
+            position: absolute;
+            right: 30px;
+            bottom: 28px;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #111;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        .option:hover .go {
+            transform: rotate(45deg);
+        }
+
+        /* Bottom */
+        .bottom {
+            margin-top: 35px;
+            color: #aaa;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 700px) {
+
+            main {
+                padding-top: 6vh;
+            }
+
+            h1 {
+                font-size: 60px;
+                letter-spacing: -4px;
+            }
+
+            .options {
+                grid-template-columns: 1fr;
+                margin-top: 45px;
+            }
+
+            .option {
+                min-height: 230px;
+            }
+
+            .icon {
+                margin-bottom: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+
+    <nav>
+        <div class="logo">Jobs<span>.AI</span></div>
+
+        <div class="nav-pill">
+            AI-powered career tools
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="tag">✦ YOUR NEXT MOVE STARTS HERE</div>
+
+        <h1>
+            Work smarter.<br>
+            <span>Get hired.</span>
+        </h1>
+
+        <p class="sub">
+            One place. Two ways to move your career forward.
+        </p>
+
+        <div class="options">
+
+            <div class="option one" onclick="selectOption(1)">
+
+                <div class="option-number">01</div>
+
+                <div class="icon">✦</div>
+
+                <h2>Know Yourself</h2>
+
+                <p>Analyze your resume & skills.</p>
+
+                <div class="go">↗</div>
+
+            </div>
+
+
+            <div class="option two" onclick="selectOption(2)">
+
+                <div class="option-number">02</div>
+
+                <div class="icon">⌁</div>
+
+                <h2>Find Your Job</h2>
+
+                <p>Discover opportunities made for you.</p>
+
+                <div class="go">↗</div>
+
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            JOBS.AI
+        </div>
+
+    </main>
+
+    <script>
+        function selectOption(option) {
+
+            if (option === 1) {
+                window.location.href = "/option1";
+            }
+
+            if (option === 2) {
+                window.location.href = "/option2";
+            }
+
+        }
+    </script>
+
+</body>
+</html>
